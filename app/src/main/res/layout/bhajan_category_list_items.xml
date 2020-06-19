@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        app:background="@color/colorAccent"
+        app:cardCornerRadius="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@color/black_translucent">
+
+        <ImageView
+            android:id="@+id/ivBhajanImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_musical_note" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.swarveda.customviews.CustomTextView
+        android:id="@+id/tvBhajan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="16dp"/>
+</LinearLayout>
